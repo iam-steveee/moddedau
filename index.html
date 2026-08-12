@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modded Among Us | Regions</title>
+<meta name="description" content="Modded Among Us region installation page, made by Steve.">
+<meta name="author" content="Steve">
+<meta name="theme-color" content="#05070c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03050a;--panel:#080c14d9;--line:#ffffff15;--text:#f7f9fc;--muted:#9299a6;--cyan:#00b7ff;--cyan2:#48ddff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{min-height:100vh;color:var(--text);background:
+radial-gradient(circle at 50% -5%,#00aaff18,transparent 34%),var(--bg);
+font-family:"Nunito",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+background-image:radial-gradient(circle,#fff 0 1px,transparent 1.5px),radial-gradient(circle,#6fd8ff 0 1px,transparent 1.5px);
+background-size:170px 170px,280px 280px;background-position:20px 20px,100px 70px;opacity:.55;
+animation:stars 28s linear infinite}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+background:linear-gradient(115deg,transparent 0 42%,#00b7ff05 50%,transparent 58%);animation:scan 10s ease-in-out infinite}
+@keyframes stars{to{transform:translate(-35px,25px)}}
+@keyframes scan{0%,100%{opacity:.2;transform:translateX(-4%)}50%{opacity:.7;transform:translateX(4%)}}
+@keyframes up{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 #00b7ff00}50%{box-shadow:0 0 28px #00b7ff20}}
+.shell{width:min(1160px,calc(100% - 32px));margin:auto}
+.navbar{position:sticky;top:16px;z-index:50;margin-top:16px}
+.navbar-inner{min-height:64px;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;
+background:#05070dcc;border:1px solid var(--line);border-radius:999px;backdrop-filter:blur(18px);box-shadow:0 14px 40px #0006}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-mark{font:900 22px/1 "Exo 2";letter-spacing:-.05em;background:linear-gradient(100deg,#fff,#6fddff,#00a9ff);
+-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand-sub{font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#777f8d}
+.nav-links{display:flex;list-style:none;gap:5px}
+.nav-links a{color:var(--muted);text-decoration:none;padding:10px 13px;border-radius:999px;font-size:13px;font-weight:800;transition:.2s}
+.nav-links a:hover{color:#fff;background:#ffffff0b}
+.menu-btn{display:none;border:0;background:transparent}
+.menu-btn span{display:block;width:23px;height:2px;background:#fff;margin:5px}
+.hero{text-align:center;padding:100px 0 58px;animation:up .8s ease both}
+.kicker{display:inline-flex;padding:7px 13px;border:1px solid #00b7ff3b;border-radius:999px;color:#8ddfff;background:#00b7ff0b;
+font:800 10px "Exo 2";letter-spacing:.12em;text-transform:uppercase;animation:glow 4s infinite}
+h1{margin:20px auto 14px;max-width:900px;font:900 clamp(45px,7vw,78px)/.96 "Exo 2";letter-spacing:-.05em}
+.gradient{background:linear-gradient(105deg,#fff 0%,#cfe6f2 42%,#00b7ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:710px;margin:auto;color:var(--muted);font-size:15px;line-height:1.8}
+.hero strong{color:#eafaff}
+.section{padding:62px 0}.section+.section{border-top:1px solid #ffffff10}
+.heading{text-align:center;margin-bottom:30px}.heading h2{font:900 clamp(31px,5vw,46px)/1.1 "Exo 2";letter-spacing:-.03em}
+.heading p{max-width:720px;margin:10px auto;color:var(--muted);font-size:14px}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.region-card{position:relative;min-height:115px;padding:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+border:1px solid var(--line);border-radius:17px;color:#fff;background:linear-gradient(145deg,#0b1019dd,#05070dcc);
+cursor:pointer;overflow:hidden;transition:.25s;animation:up .7s ease both}
+.region-card:before{content:"";position:absolute;inset:-1px;background:linear-gradient(120deg,#00b7ff18,transparent 45%,#00e1ff0b);
+opacity:0;transition:.25s}.region-card:hover{transform:translateY(-6px);border-color:#00b7ff6b;box-shadow:0 20px 45px #0007,0 0 30px #00b7ff13}
+.region-card:hover:before{opacity:1}.region-name,.region-location,.region-arrow{position:relative}
+.region-name{font:800 18px "Exo 2"}.region-location{margin-top:3px;color:#7d8693;font-size:12px}.region-arrow{position:absolute;right:13px;top:11px;color:#6b7480;font-size:14px}
+.notice,.final{padding:21px;border:1px solid #00b7ff1f;border-radius:16px;background:#00b7ff08;color:#a3abb6;text-align:center;font-size:13px;line-height:1.75}
+.notice strong,.final strong{color:#dff8ff}
+.download-row{text-align:center;margin-top:23px}
+.download{display:inline-flex;min-width:300px;padding:16px 25px;justify-content:center;text-decoration:none;color:#031019;border-radius:13px;
+background:linear-gradient(110deg,#00aaff,#36d8ff);box-shadow:0 14px 35px #00b7ff25;transition:.22s}
+.download:hover{transform:translateY(-4px);box-shadow:0 19px 45px #00b7ff38}
+.download-main{display:block;font:900 15px "Exo 2"}.download-sub{display:block;font-size:11px;font-weight:700;opacity:.65}
+.separator{display:flex;align-items:center;gap:14px;margin:48px 0;color:#636b76;font-size:11px}
+.separator:before,.separator:after{content:"";height:1px;flex:1;background:#ffffff10}
+.manual-intro{text-align:center;max-width:720px;margin:0 auto;color:var(--muted);font-size:14px}
+.methods{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:25px}
+.method{padding:27px;border:1px solid var(--line);border-radius:17px;background:var(--panel);box-shadow:0 16px 38px #0004;transition:.22s}
+.method:hover{transform:translateY(-3px);border-color:#ffffff28}.method h3{margin-bottom:22px;font:900 21px "Exo 2"}
+.steps{list-style:none}.steps li{display:grid;grid-template-columns:29px 1fr;gap:11px;align-items:start}.steps li+li{margin-top:16px}
+.num{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;color:#021018;background:linear-gradient(135deg,#15baff,#4de4ff);font:900 11px "Exo 2"}
+.step{color:#aab1bb;font-size:13px}.key{display:inline-block;padding:3px 7px;border:1px solid #ffffff25;border-bottom-width:2px;border-radius:6px;background:#ffffff08;color:#dce3e9;font:10px ui-monospace,monospace}
+.cmd{display:flex;gap:8px;margin-top:8px;padding:9px;background:#0005;border:1px solid #ffffff12;border-radius:10px}
+.cmd code{flex:1;overflow-wrap:anywhere;color:#86d8ff;font:11px ui-monospace,monospace}.copy{border:0;padding:7px 10px;border-radius:8px;background:#ffffff0c;color:#dff8ff;cursor:pointer;font-size:10px;font-weight:900}
+.final{margin-top:17px;background:#05080db5;border-color:var(--line)}
+.made{text-align:center;padding:72px 0}.made-card{max-width:700px;margin:0 auto;padding:36px 25px;border:1px solid #00b7ff2b;border-radius:20px;background:linear-gradient(145deg,#08111bd9,#05070dc9);box-shadow:0 0 45px #00b7ff0d}
+.made-label{color:#737c89;font:800 11px "Exo 2";letter-spacing:.18em;text-transform:uppercase}
+.made-name{margin:7px 0;font:900 clamp(38px,7vw,62px) "Exo 2";background:linear-gradient(100deg,#fff,#55ddff,#00a9ff);
+-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 30px #00b7ff25}
+.made-text{color:#9da6b2;font-size:13px}.discord{display:inline-flex;flex-direction:column;margin-top:20px;padding:13px 22px;min-width:270px;border-radius:12px;
+text-decoration:none;color:#fff;background:linear-gradient(135deg,#5865f2,#7581ff);box-shadow:0 15px 32px #5865f225;transition:.2s}
+.discord:hover{transform:translateY(-3px)}.discord-main{font:900 14px "Exo 2"}.discord-sub{font-size:11px;opacity:.8}
+footer{border-top:1px solid #ffffff10;padding:45px 0 26px;background:#010205b5}.footer-inner{display:flex;justify-content:space-between;gap:25px}
+.footer-left p{margin-top:9px;color:#626a76;font-size:11px}.footer-right{text-align:right;color:#555d68;font-size:11px;line-height:1.8}
+@media(max-width:760px){
+.shell{width:min(100% - 24px,620px)}.navbar{top:9px;margin-top:9px}.navbar-inner{min-height:58px}
+.nav-links{display:none;position:absolute;left:10px;right:10px;top:calc(100% + 8px);padding:8px;flex-direction:column;border:1px solid var(--line);border-radius:15px;background:#04070df7;backdrop-filter:blur(18px)}
+.nav-links.open{display:flex}.nav-links a{display:block}.menu-btn{display:block}.hero{padding:72px 0 38px}.region-grid,.methods{grid-template-columns:1fr}.section{padding:45px 0}
+.download{min-width:min(100%,330px)}.footer-inner{flex-direction:column}.footer-right{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<div class="navbar-inner shell">
+<a class="brand" href="#top"><span class="brand-mark">MAU</span><span class="brand-sub">Modded Among Us</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#regions">Regions</a></li><li><a href="#windows">Windows</a></li><li><a href="#creator">Creator</a></li>
+</ul>
+<button class="menu-btn" id="menuBtn" aria-label="Open navigation"><span></span><span></span><span></span></button>
+</div>
+</nav>
+
+<div id="top"></div>
+<header class="hero shell">
+<div class="kicker">Modded Among Us</div>
+<h1>Install <span class="gradient">Modded Regions</span></h1>
+<p>Add custom server regions to Among Us and connect to modded servers around the world.<br><strong>Choose a region below and install it directly.</strong></p>
+</header>
+
+<main class="shell">
+<section class="section" id="regions">
+<div class="heading"><h2>Mobile Installation</h2><p>Keep Among Us open, then select a region below.</p></div>
+<div class="region-grid">
+<button class="region-card" data-url="amongus://init?servername=Niko_NA&amp;serverport=443&amp;serverip=https%3A%2F%2Fau-us.niko233.top&amp;usedtls=false"><span class="region-name">Niko NA</span><span class="region-location">North America</span><span class="region-arrow">↗</span></button>
+<button class="region-card" data-url="amongus://init?servername=Niko_AS&amp;serverport=443&amp;serverip=https%3A%2F%2Fau-as.niko233.top&amp;usedtls=false"><span class="region-name">Niko AS</span><span class="region-location">Asia</span><span class="region-arrow">↗</span></button>
+<button class="region-card" data-url="amongus://init?servername=Niko_EU&amp;serverport=443&amp;serverip=https%3A%2F%2Fau-eu.niko233.top&amp;usedtls=false"><span class="region-name">Niko EU</span><span class="region-location">Europe</span><span class="region-arrow">↗</span></button>
+<button class="region-card" data-url="amongus://init?servername=Modded_EU&amp;serverport=443&amp;serverip=https%3A%2F%2Fau-eu.duikbo.at&amp;usedtls=false"><span class="region-name">Modded EU</span><span class="region-location">Europe</span><span class="region-arrow">↗</span></button>
+<button class="region-card" data-url="amongus://init?servername=Modded_NA&amp;serverport=443&amp;serverip=https%3A%2F%2Faumods.org&amp;usedtls=false"><span class="region-name">Modded NA</span><span class="region-location">North America</span><span class="region-arrow">↗</span></button>
+<button class="region-card" data-url="amongus://init?servername=Modded_AS&amp;serverport=443&amp;serverip=https%3A%2F%2Fau-as.duikbo.at&amp;usedtls=false"><span class="region-name">Modded AS</span><span class="region-location">Asia</span><span class="region-arrow">↗</span></button>
+</div>
+</section>
+
+<section class="section" id="windows">
+<div class="heading"><h2>Windows Installation</h2><p>Use the supplied installer for automatic setup, or download the real region file for manual installation.</p></div>
+<div class="notice"><strong>Modded Among Us:</strong> if the regions are already available in your game, no additional setup is needed.</div>
+<div class="download-row">
+<a class="download" href="modded_regions_installer.bat" download><span><span class="download-main">Download Installer (.bat)</span><span class="download-sub">Automatic Installation</span></span></a>
+</div>
+<div class="separator"><span>Manual installation</span></div>
+<div class="download-row">
+<a class="download" href="regionInfo.json" download><span><span class="download-main">Download regionInfo.json</span><span class="download-sub">Manual Installation</span></span></a>
+</div>
+<p class="manual-intro" style="margin-top:28px">Navigate to <strong>AppData/LocalLow/Innersloth/Among Us</strong> and replace the existing region file.</p>
+<div class="methods">
+<div class="method"><h3>Method 1: Quick Access</h3><ol class="steps">
+<li><span class="num">1</span><div class="step">Copy this path:<div class="cmd"><code>%userprofile%\AppData\LocalLow\Innersloth\Among Us</code><button class="copy" data-copy="%userprofile%\AppData\LocalLow\Innersloth\Among Us">Copy</button></div></div></li>
+<li><span class="num">2</span><div class="step">Press <span class="key">WIN + R</span></div></li>
+<li><span class="num">3</span><div class="step">Press <span class="key">CTRL + V</span></div></li>
+<li><span class="num">4</span><div class="step">Press <span class="key">ENTER</span></div></li>
+</ol></div>
+<div class="method"><h3>Method 2: Manual Navigation</h3><ol class="steps">
+<li><span class="num">1</span><div class="step">Open <strong>File Explorer</strong>.</div></li>
+<li><span class="num">2</span><div class="step">Enter <strong>%APPDATA%</strong> in the address bar.</div></li>
+<li><span class="num">3</span><div class="step">Press <span class="key">ENTER</span>.</div></li>
+<li><span class="num">4</span><div class="step">Open <strong>LocalLow</strong>.</div></li>
+<li><span class="num">5</span><div class="step">Open <strong>Innersloth</strong>.</div></li>
+<li><span class="num">6</span><div class="step">Open <strong>Among Us</strong>.</div></li>
+</ol></div>
+</div>
+<div class="final">Copy <strong>regionInfo.json</strong> into the folder and replace the existing file when prompted.<br><strong>Restart Among Us after making the change.</strong></div>
+</section>
+
+<section class="made" id="creator">
+<div class="made-card">
+<div class="made-label">Website made by</div>
+<div class="made-name">Steve</div>
+<div class="made-text">Modded Among Us • Community project</div>
+<a class="discord" href="https://discord.gg/amongusindians" target="_blank" rel="noopener">
+<span class="discord-main">Discord: iam._.steve</span>
+<span class="discord-sub">discord.gg/amongusindians</span>
+</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-inner shell">
+<div class="footer-left"><div class="brand-mark">MAU</div><p>Modded Among Us</p></div>
+<div class="footer-right">Made by <strong style="color:#aeeaff">Steve</strong><br>© <span id="year"></span> Steve</div>
+</div>
+</footer>
+
+<script>
+const menu=document.getElementById("navLinks");
+document.getElementById("menuBtn").addEventListener("click",()=>menu.classList.toggle("open"));
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+document.querySelectorAll(".region-card").forEach(card=>card.addEventListener("click",()=>{location.href=card.dataset.url}));
+document.querySelectorAll(".copy").forEach(btn=>btn.addEventListener("click",async()=>{
+const old=btn.textContent;
+try{await navigator.clipboard.writeText(btn.dataset.copy);btn.textContent="Copied!";setTimeout(()=>btn.textContent=old,1800)}
+catch{btn.textContent="Copy failed";setTimeout(()=>btn.textContent=old,1800)}
+}));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
