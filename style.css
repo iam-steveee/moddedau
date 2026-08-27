@@ -190,3 +190,15 @@ button{font:inherit}
 @keyframes panelIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(max-width:900px){.category-grid{grid-template-columns:1fr}.announcement-inner{grid-template-columns:1fr;gap:12px}.guide-steps,.methods{grid-template-columns:1fr}.install-panel{padding:28px}}
 @media(max-width:620px){.region-card{grid-template-columns:30px 1fr auto;padding:20px 17px;border-radius:21px}.region-main strong{font-size:18px}.region-main small{font-size:8px}.announcement{padding-bottom:55px}.announcement-inner{padding:21px}.category-card{padding:20px 18px}.category-card strong{font-size:16px}.category-card small{font-size:9px}.install{padding-top:20px}.install-panel{padding:20px;border-radius:23px}.bat-guide,.region-info-block{padding:18px}.guide-head h4{font-size:17px}.guide-steps{gap:9px}.quick-process{padding:19px}.quick-process ol{font-size:12px}.methods{gap:10px}.method-card{padding:17px}.cmd code{font-size:8px}}
+
+/* Mobile guide additions */
+.mobile-guide { margin-top: 28px; }
+.mobile-guide .quick-process { margin-bottom: 18px; }
+.mobile-guide .quick-process h4 { margin: 8px 0 18px; font-family: var(--sans); font-size: 1.05rem; }
+.mobile-guide .quick-process ol { margin: 0; padding-left: 1.4rem; }
+.mobile-guide .quick-process li { margin: 0 0 14px; }
+.mobile-warning { border: 1px solid rgba(190, 150, 255, .18); background: rgba(90, 60, 120, .08); border-radius: 18px; padding: 18px 20px; color: var(--muted); line-height: 1.7; }
+.mobile-warning strong { color: var(--text); }
+
+/* Keep the announcement full-width inside the mobile panel without changing its visual language. */
+.install-panel > .announcement { margin: 28px 0 0; }

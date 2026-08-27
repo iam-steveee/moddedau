@@ -42,17 +42,22 @@
     });
   });
 
-  $$('.region-card').forEach(card => {
-    card.addEventListener('pointermove', e => {
-      const r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
-      card.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
+  const bindRegionCards = root => {
+    $$('.region-card', root).forEach(card => {
+      if (card.dataset.bound === 'true') return;
+      card.dataset.bound = 'true';
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
+        card.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
+      });
+      card.addEventListener('click', () => {
+        const url = card.dataset.url;
+        if (url) window.location.href = url;
+      });
     });
-    card.addEventListener('click', () => {
-      const url = card.dataset.url;
-      if (url) window.location.href = url;
-    });
-  });
+  };
+  bindRegionCards();
 
   const finePointer = matchMedia('(pointer:fine)').matches;
   if (finePointer) {
@@ -73,6 +78,10 @@
     panels.forEach(panel => {
       const active = panel.id === targetId;
       panel.hidden = !active;
+      if (active) {
+        bindRegionCards(panel);
+        $$('.reveal', panel).forEach(el => el.classList.add('visible'));
+      }
     });
     categories.forEach(button => {
       const active = button.dataset.target === targetId;
