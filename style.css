@@ -202,3 +202,11 @@ button{font:inherit}
 
 /* Keep the announcement full-width inside the mobile panel without changing its visual language. */
 .install-panel > .announcement { margin: 28px 0 0; }
+
+/* Added region/community UI */
+.region-card.coming-soon{cursor:default;opacity:.48}
+.region-card.coming-soon:hover{border-color:var(--line);transform:none}
+.region-card.coming-soon:hover:before{opacity:0}
+.region-card.coming-soon .region-arrow{color:#5f5d65;transform:none}
+.region-card.coming-soon .region-main small{color:#66636b}
+.social-icon svg{width:23px;height:23px}
