@@ -18,6 +18,15 @@
   --mono:"DM Mono",monospace;
   --editorial:"Playfair Display",serif;
 }
+
+/* Consistent lavender/white gradient for headings only. The typeface is unchanged. */
+h1,h2,h3,h4{
+  background:linear-gradient(100deg,#f4f1eb 0%,#e7dfff 34%,#cbb7ff 68%,#a88cff 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -144,11 +153,11 @@ button{font:inherit}
 .discord-pill:hover{border-color:rgba(255,255,255,.23);transform:translateY(-1px)}
 .icon{display:inline-grid;place-items:center;width:18px;height:18px}.icon svg{width:18px}
 .section-shell{width:min(1180px,calc(100% - 40px));margin-inline:auto}
-.hero{min-height:100svh;padding-top:150px;padding-bottom:100px;display:flex;align-items:center}
+.hero{min-height:auto;padding-top:150px;padding-bottom:90px;display:flex;align-items:center}
 .eyebrow{margin:0 0 18px;color:#a6a2ab;font:500 11px var(--mono);letter-spacing:.18em}
 .eyebrow-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#bca1ff;box-shadow:0 0 12px #bca1ff;margin-right:8px}
 .hero h1{font:800 clamp(52px,7.4vw,100px)/.94 var(--heading);letter-spacing:-.055em;margin:0;max-width:900px}
-.hero h1 .accent-text{font:800 1em/1 var(--heading);background:linear-gradient(100deg,#f4f1eb 0%,#cbb7ff 55%,#a88cff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .accent-text{font:inherit;background:none;-webkit-background-clip:initial;background-clip:initial;color:inherit}
 .hero-text{font-family:var(--body);max-width:610px;color:#a8a6ad;font-size:16px;line-height:1.8;margin:28px 0 34px}
 .hero-actions{display:flex;align-items:center;gap:25px}
 .primary-btn{font-family:var(--ui);display:inline-flex;align-items:center;gap:26px;padding:15px 18px 15px 20px;background:#f1eee9;color:#101015;border-radius:999px;font-weight:800;font-size:13px;box-shadow:0 12px 35px rgba(0,0,0,.25);transition:.25s}
@@ -159,8 +168,7 @@ button{font:inherit}
 .section-kicker{font:11px "DM Mono",monospace;color:#77757e;letter-spacing:.16em;margin-bottom:40px}
 .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .intro h2,.connect h2{font:800 clamp(42px,6vw,72px)/1.02 var(--heading);letter-spacing:-.045em;margin:0}
-.intro h2 span{color:#c8b4ff}
-.connect h2 .accent-text{font-family:var(--heading);font-style:normal;font-weight:800;color:#c8b4ff}
+.hero h1 .accent-text,.intro h2 span,.connect h2 .accent-text{font:inherit;background:linear-gradient(100deg,#f4f1eb 0%,#e7dfff 34%,#cbb7ff 68%,#a88cff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .intro-grid>p{align-self:end;max-width:520px;color:#99979f;line-height:1.85;font-size:15px}
 .projects{padding:80px 0 140px}
 .section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}
@@ -290,5 +298,5 @@ button{font:inherit}
   z-index:5 !important;
 }
 
-/* Hero card/orbit removal: the hero is intentionally text-only. */
+/* Hero is intentionally text-only. */
 .hero-copy{width:100%;max-width:900px}
