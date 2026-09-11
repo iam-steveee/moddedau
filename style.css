@@ -309,3 +309,11 @@ button{font:inherit}
 .region-card.coming-soon .region-arrow{color:#5f5d65;transform:none}
 .region-card.coming-soon .region-main small{color:#66636b}
 .social-icon svg{width:23px;height:23px}
+
+/* Petal visibility fix */
+.petal{
+  opacity: 0.95 !important;
+  filter: drop-shadow(0 0 10px rgba(220,170,255,.9))
+          drop-shadow(0 0 18px rgba(180,120,255,.7));
+  z-index: 5 !important;
+}
