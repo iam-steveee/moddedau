@@ -101,37 +101,6 @@
     });
   });
 
-  const bgVideo = $('#bgVideo');
-  if (bgVideo) {
-    // Mobile browsers require the background video to be muted for autoplay.
-    bgVideo.muted = true;
-    bgVideo.defaultMuted = true;
-    bgVideo.volume = 0;
-    bgVideo.setAttribute('muted', '');
-    bgVideo.setAttribute('autoplay', '');
-    bgVideo.setAttribute('playsinline', '');
-
-    const tryPlay = () => {
-      if (document.hidden) return;
-      const promise = bgVideo.play();
-      if (promise && typeof promise.catch === 'function') promise.catch(() => {});
-    };
-
-    tryPlay();
-    bgVideo.addEventListener('loadedmetadata', tryPlay);
-    bgVideo.addEventListener('loadeddata', tryPlay);
-    bgVideo.addEventListener('canplay', tryPlay);
-
-    document.addEventListener('visibilitychange', () => {
-      if (!document.hidden) tryPlay();
-    });
-
-    // Fallback for browsers that require a user gesture before starting media.
-    ['pointerdown', 'touchstart', 'keydown'].forEach(evt => {
-      document.addEventListener(evt, tryPlay, { once: true, passive: true });
-    });
-  }
-
   const backTop = $('#backTop');
   const updateTop = () => backTop.classList.toggle('show', scrollY > 600);
   addEventListener('scroll', updateTop, { passive: true });

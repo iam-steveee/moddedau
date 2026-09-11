@@ -7,8 +7,8 @@
   --text:#f4f1eb;
   --muted:#9c9aa1;
   --soft:#d0ccd0;
-  --accent:#d9b8ff;
-  --accent-2:#8db7ff;
+  --accent:#cfa7ff;
+  --accent-2:#b18cff;
   --accent-3:#ffb8dc;
   --shadow:0 28px 80px rgba(0,0,0,.42);
   --radius:28px;
@@ -25,11 +25,13 @@ body{
   background:var(--bg);
   font-family:var(--body); overflow-x:hidden;
 }
-.bg-video{
-  position:fixed; inset:0; z-index:0;
-  width:100%; height:100%; object-fit:cover; object-position:center;
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  background:url('assets/background.png') center center / cover no-repeat;
   pointer-events:none;
-  filter:saturate(.7) brightness(.8) contrast(1.05);
 }
 body:before{
   content:""; position:fixed; inset:0; pointer-events:none; z-index:1;
@@ -50,7 +52,7 @@ body:before{
   contain:layout paint;
 }
 .petal{
-  --size:clamp(9px,1.05vw,16px);
+  --size:clamp(12px,1.35vw,20px);
   --duration:18s;
   --delay:0s;
   --start-x:50vw;
@@ -66,7 +68,7 @@ body:before{
   display:block;
   opacity:0;
   border-radius:72% 28% 66% 34% / 38% 42% 58% 62%;
-  background:linear-gradient(145deg,rgba(255,240,248,.96) 0%,rgba(255,168,205,.90) 52%,rgba(228,94,162,.90) 100%);
+  background:linear-gradient(145deg,rgba(245,220,255,.98) 0%,rgba(196,145,255,.92) 52%,rgba(140,90,255,.90) 100%);
   box-shadow:inset 1px 1px 1px rgba(255,255,255,.58),0 2px 7px rgba(228,94,162,.10);
   transform-origin:45% 55%;
   will-change:transform,opacity;
