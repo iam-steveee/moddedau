@@ -8,10 +8,16 @@
   <title>Modded Among Us — Community Regions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Exo+2:wght@300;400;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="background-media" aria-hidden="true">
+    <video class="background-video" autoplay muted loop playsinline preload="auto" poster="assets/background-poster.jpg">
+      <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="background-vignette"></div>
+  </div>
   <div class="noise" aria-hidden="true"></div>
   <div class="aurora aurora-a" aria-hidden="true"></div>
   <div class="aurora aurora-b" aria-hidden="true"></div>
@@ -51,10 +57,14 @@
       <div class="hero-card reveal delay-1" data-tilt>
         <div class="hero-card-top"><span>STEVE / REGIONS</span><span class="status"><i></i> ONLINE</span></div>
         <div class="hero-orbit">
-          <div class="orbit orbit-1"></div>
-          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-1">
+            <span class="orbital-object orbital-object-1" aria-hidden="true">✶</span>
+            <span class="orbital-object orbital-object-2" aria-hidden="true">✶</span>
+          </div>
+          <div class="orbit orbit-2">
+            <span class="orbital-object orbital-object-3" aria-hidden="true">✶</span>
+          </div>
           <div class="core"><img src="assets/steve-pfp.png" alt="Steve"></div>
-          <span class="orbit-dot dot-1"></span><span class="orbit-dot dot-2"></span><span class="orbit-dot dot-3"></span>
         </div>
         <div class="hero-card-bottom"><span>COMMUNITY REGIONS</span><span>10 DESTINATIONS</span></div>
       </div>
@@ -152,12 +162,12 @@
         <div class="bat-guide">
           <div class="guide-head"><span class="guide-number">01</span><div><p class="guide-label">AUTOMATIC INSTALLATION</p><h4>Download and run the <code>.bat</code> installer.</h4></div></div>
           <div class="guide-steps">
-            <div><span>1</span><p><strong>Download the installer.</strong><br>Use the button below to save <code>modded_regions_installer.bat</code> to your Windows PC.</p></div>
+            <div><span>1</span><p><strong>Download the installer.</strong><br>Use the button below to save <code>AUCustomServers.bat</code> to your Windows PC.</p></div>
             <div><span>2</span><p><strong>Open the downloaded file.</strong><br>Run the <code>.bat</code> file. Windows will open a command window and the installer will handle the region file automatically.</p></div>
             <div><span>3</span><p><strong>Wait for SUCCESS.</strong><br>Let the script finish. Do not close the command window while it is installing.</p></div>
             <div><span>4</span><p><strong>Restart Among Us.</strong><br>If the game was already open, close and reopen it so the new regions are loaded.</p></div>
           </div>
-          <a class="download-button primary" href="modded_regions_installer.bat" download><span><strong>Download Installer (.bat)</strong><small>Automatic installation</small></span><b>↓</b></a>
+          <a class="download-button primary" href="AUCustomServers.bat" download><span><strong>Download Installer (.bat)</strong><small>Automatic installation</small></span><b>↓</b></a>
         </div>
 
         <div class="separator"><span>ONLY NEEDED IF THE SCRIPT FAILS</span></div>
@@ -165,7 +175,7 @@
         <div class="region-info-block">
           <div class="guide-head"><span class="guide-number">02</span><div><p class="guide-label">MANUAL INSTALLATION</p><h4>Use <code>regionInfo.json</code>.</h4></div></div>
           <p class="manual-intro">Download the real region file and place it in your Among Us folder. The two methods below are kept as the manual process.</p>
-          <a class="download-button secondary" href="regionInfo.json" download><span><strong>Download regionInfo.json</strong><small>Manual installation</small></span><b>↓</b></a>
+          <a class="download-button secondary" href="regioninfo.json" download><span><strong>Download regionInfo.json</strong><small>Manual installation</small></span><b>↓</b></a>
 
           <div class="methods">
             <article class="method-card">
@@ -192,10 +202,6 @@
           <div class="final-step"><strong>Final step:</strong> copy the downloaded <code>regionInfo.json</code> into the Among Us folder and replace the existing file when prompted. Restart Among Us after making the change.</div>
         </div>
       </div>
-    </section>
-
-    <section class="statement section-shell">
-      <div class="statement-inner reveal"><span class="quote-mark">“</span><p>Built to make the setup less painful.</p><span class="statement-line"></span><small>STEVE / MODDED AMONG US</small></div>
     </section>
 
     <section class="connect section-shell" id="connect">
