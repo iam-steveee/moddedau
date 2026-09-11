@@ -12,16 +12,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background-media" aria-hidden="true">
-    <video class="background-video" autoplay muted loop playsinline preload="auto" poster="assets/background-poster.jpg">
-      <source src="assets/background.mp4" type="video/mp4">
-    </video>
-    <div class="background-vignette"></div>
-  </div>
+  <video class="bg-video" id="bgVideo" autoplay muted loop playsinline preload="auto" poster="assets/background-poster.jpg" aria-hidden="true">
+    <source src="assets/background.mp4" type="video/mp4">
+  </video>
   <div class="noise" aria-hidden="true"></div>
-  <div class="aurora aurora-a" aria-hidden="true"></div>
-  <div class="aurora aurora-b" aria-hidden="true"></div>
-  <div class="stars" aria-hidden="true"></div>
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Modded Among Us home">
@@ -46,7 +40,7 @@
     <section class="hero section-shell">
       <div class="hero-copy reveal">
         <p class="eyebrow"><span class="eyebrow-dot"></span> MODDED AMONG US · 2026</p>
-        <h1>Connect to<br><em>modded servers.</em></h1>
+        <h1>Connect to<br><span class="accent-text">modded servers.</span></h1>
         <p class="hero-text">Install custom server regions for Among Us and connect to modded communities around the world. Choose your region and follow the installation process for your device.</p>
         <div class="hero-actions">
           <a class="primary-btn" href="#regions"><span>Explore regions</span><span class="arrow">↓</span></a>
@@ -207,7 +201,7 @@
     <section class="connect section-shell" id="connect">
       <div class="section-kicker reveal">03 / CONNECT</div>
       <div class="connect-grid">
-        <div class="reveal"><p class="eyebrow">KEEP IN TOUCH</p><h2>Find me<br><em>outside this page.</em></h2></div>
+        <div class="reveal"><p class="eyebrow">KEEP IN TOUCH</p><h2>Find me<br><span class="accent-text">outside this page.</span></h2></div>
         <div class="social-stack reveal delay-1">
           <a class="social-card" href="https://discord.gg/amongusindians" target="_blank" rel="noopener noreferrer"><span class="social-icon discord-bg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.54 5.34A16.1 16.1 0 0 0 15.48 4l-.5 1.02a14.2 14.2 0 0 0-5.96 0L8.52 4a16.1 16.1 0 0 0-4.06 1.34C1.88 9.2 1.18 12.97 1.53 16.69a16.3 16.3 0 0 0 4.97 2.5l1.2-1.64c-.66-.25-1.3-.55-1.9-.9l.46-.35c3.67 1.7 7.65 1.7 11.28 0l.47.35c-.61.35-1.25.65-1.91.9l1.2 1.64a16.3 16.3 0 0 0 4.97-2.5c.41-4.31-.7-8.04-2.73-11.35ZM8.75 14.77c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Zm6.5 0c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Z"/></svg></span><span><small>DISCORD USERNAME</small><strong>@iam._.steve</strong></span><span class="social-arrow">↗</span></a>
           <a class="social-card" href="https://discord.gg/amongusindians" target="_blank" rel="noopener noreferrer"><span class="social-icon discord-bg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.54 5.34A16.1 16.1 0 0 0 15.48 4l-.5 1.02a14.2 14.2 0 0 0-5.96 0L8.52 4a16.1 16.1 0 0 0-4.06 1.34C1.88 9.2 1.18 12.97 1.53 16.69a16.3 16.3 0 0 0 4.97 2.5l1.2-1.64c-.66-.25-1.3-.55-1.9-.9l.46-.35c3.67 1.7 7.65 1.7 11.28 0l.47.35c-.61.35-1.25.65-1.91.9l1.2 1.64a16.3 16.3 0 0 0 4.97-2.5c.41-4.31-.7-8.04-2.73-11.35ZM8.75 14.77c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Zm6.5 0c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Z"/></svg></span><span><small>DISCORD SERVER</small><strong>Among Us Indians</strong></span><span class="social-arrow">↗</span></a>
@@ -220,7 +214,7 @@
     <section class="connect section-shell" id="region-discord">
       <div class="section-kicker reveal">04 / REGION COMMUNITIES</div>
       <div class="connect-grid">
-        <div class="reveal"><p class="eyebrow">REGIONS DISCORD SERVER LINK</p><h2>Find your<br><em>region community.</em></h2></div>
+        <div class="reveal"><p class="eyebrow">REGIONS DISCORD SERVER LINK</p><h2>Find your<br><span class="accent-text">region community.</span></h2></div>
         <div class="social-stack reveal delay-1">
           <div class="social-card"><span class="social-icon discord-bg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.54 5.34A16.1 16.1 0 0 0 15.48 4l-.5 1.02a14.2 14.2 0 0 0-5.96 0L8.52 4a16.1 16.1 0 0 0-4.06 1.34C1.88 9.2 1.18 12.97 1.53 16.69a16.3 16.3 0 0 0 4.97 2.5l1.2-1.64c-.66-.25-1.3-.55-1.9-.9l.46-.35c3.67 1.7 7.65 1.7 11.28 0l.47.35c-.61.35-1.25.65-1.91.9l1.2 1.64a16.3 16.3 0 0 0 4.97-2.5c.41-4.31-.7-8.04-2.73-11.35ZM8.75 14.77c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Zm6.5 0c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Z"/></svg></span><span><small>MODDED</small><strong>No Data Available</strong></span><span class="social-arrow">—</span></div>
           <a class="social-card" href="https://discord.gg/Vu4b8ZvDh" target="_blank" rel="noopener noreferrer"><span class="social-icon discord-bg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.54 5.34A16.1 16.1 0 0 0 15.48 4l-.5 1.02a14.2 14.2 0 0 0-5.96 0L8.52 4a16.1 16.1 0 0 0-4.06 1.34C1.88 9.2 1.18 12.97 1.53 16.69a16.3 16.3 0 0 0 4.97 2.5l1.2-1.64c-.66-.25-1.3-.55-1.9-.9l.46-.35c3.67 1.7 7.65 1.7 11.28 0l.47.35c-.61.35-1.25.65-1.91.9l1.2 1.64a16.3 16.3 0 0 0 4.97-2.5c.41-4.31-.7-8.04-2.73-11.35ZM8.75 14.77c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Zm6.5 0c-1.1 0-2-1.02-2-2.27s.88-2.27 2-2.27 2 1.02 2 2.27-.9 2.27-2 2.27Z"/></svg></span><span><small>NIKO</small><strong>NikoCat233</strong></span><span class="social-arrow">↗</span></a>

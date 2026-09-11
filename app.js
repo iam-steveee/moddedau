@@ -101,6 +101,18 @@
     });
   });
 
+  const bgVideo = $('#bgVideo');
+  if (bgVideo) {
+    const tryPlay = () => bgVideo.play().catch(() => {});
+    tryPlay();
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) tryPlay();
+    });
+    ['pointerdown', 'touchstart', 'keydown'].forEach(evt => {
+      document.addEventListener(evt, tryPlay, { once: true, passive: true });
+    });
+  }
+
   const backTop = $('#backTop');
   const updateTop = () => backTop.classList.toggle('show', scrollY > 600);
   addEventListener('scroll', updateTop, { passive: true });
