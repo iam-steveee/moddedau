@@ -59,19 +59,6 @@
   };
   bindRegionCards();
 
-  const finePointer = matchMedia('(pointer:fine)').matches;
-  if (finePointer) {
-    $$('[data-tilt]').forEach(card => {
-      card.addEventListener('pointermove', e => {
-        const r = card.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - .5;
-        const y = (e.clientY - r.top) / r.height - .5;
-        card.style.transform = `perspective(900px) rotateX(${(-y * 3).toFixed(2)}deg) rotateY(${(x * 3).toFixed(2)}deg)`;
-      });
-      card.addEventListener('pointerleave', () => card.style.transform = '');
-    });
-  }
-
   const categories = $$('.category-card');
   const panels = $$('.install-panel');
   const showPanel = targetId => {
