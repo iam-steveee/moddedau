@@ -25,14 +25,7 @@ body{
   background:var(--bg);
   font-family:var(--body); overflow-x:hidden;
 }
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:0;
-  background:url('assets/background.png') center center / cover no-repeat;
-  pointer-events:none;
-}
+
 body:before{
   content:""; position:fixed; inset:0; pointer-events:none; z-index:1;
   background:
@@ -53,7 +46,7 @@ body:before{
 }
 .petal{
   --size:clamp(12px,1.35vw,20px);
-  --duration:18s;
+  --duration:28s;
   --delay:0s;
   --start-x:50vw;
   --drift-x:0vw;
@@ -71,7 +64,7 @@ body:before{
   background:linear-gradient(145deg,rgba(245,220,255,.98) 0%,rgba(196,145,255,.92) 52%,rgba(140,90,255,.90) 100%);
   box-shadow:inset 1px 1px 1px rgba(255,255,255,.58),0 2px 7px rgba(228,94,162,.10);
   transform-origin:45% 55%;
-  will-change:transform,opacity;
+  will-change:auto;
   animation:petalFall var(--duration) var(--delay) linear infinite;
 }
 .petal::after{
@@ -86,14 +79,14 @@ body:before{
 .petal-02{--start-x:9vw;--drift-x:-5vw;--duration:22s;--delay:-3s;--rotate-start:18deg;--rotate-end:410deg;--scale:.95}
 .petal-03{--start-x:14vw;--drift-x:9vw;--duration:19s;--delay:-15s;--rotate-start:70deg;--rotate-end:455deg;--scale:1.05}
 .petal-04{--start-x:20vw;--drift-x:-7vw;--duration:24s;--delay:-7s;--rotate-start:-15deg;--rotate-end:350deg;--scale:.82}
-.petal-05{--start-x:26vw;--drift-x:6vw;--duration:18s;--delay:-12s;--rotate-start:42deg;--rotate-end:390deg;--scale:1.12}
+.petal-05{--start-x:26vw;--drift-x:6vw;--duration:28s;--delay:-12s;--rotate-start:42deg;--rotate-end:390deg;--scale:1.12}
 .petal-06{--start-x:32vw;--drift-x:-9vw;--duration:23s;--delay:-18s;--rotate-start:5deg;--rotate-end:375deg;--scale:.76}
 .petal-07{--start-x:38vw;--drift-x:8vw;--duration:20s;--delay:-4s;--rotate-start:-55deg;--rotate-end:310deg;--scale:.92}
 .petal-08{--start-x:44vw;--drift-x:-6vw;--duration:25s;--delay:-14s;--rotate-start:30deg;--rotate-end:440deg;--scale:1.08}
 .petal-09{--start-x:50vw;--drift-x:5vw;--duration:19s;--delay:-9s;--rotate-start:82deg;--rotate-end:470deg;--scale:.84}
 .petal-10{--start-x:56vw;--drift-x:-8vw;--duration:21s;--delay:-20s;--rotate-start:-25deg;--rotate-end:335deg;--scale:1.18}
 .petal-11{--start-x:62vw;--drift-x:7vw;--duration:24s;--delay:-5s;--rotate-start:55deg;--rotate-end:425deg;--scale:.73}
-.petal-12{--start-x:68vw;--drift-x:-5vw;--duration:18s;--delay:-16s;--rotate-start:0deg;--rotate-end:365deg;--scale:.98}
+.petal-12{--start-x:68vw;--drift-x:-5vw;--duration:28s;--delay:-16s;--rotate-start:0deg;--rotate-end:365deg;--scale:.98}
 .petal-13{--start-x:73vw;--drift-x:9vw;--duration:22s;--delay:-11s;--rotate-start:-42deg;--rotate-end:395deg;--scale:1.06}
 .petal-14{--start-x:78vw;--drift-x:-7vw;--duration:20s;--delay:-2s;--rotate-start:25deg;--rotate-end:385deg;--scale:.8}
 .petal-15{--start-x:83vw;--drift-x:6vw;--duration:26s;--delay:-19s;--rotate-start:65deg;--rotate-end:455deg;--scale:1.14}
@@ -103,7 +96,7 @@ body:before{
 .petal-19{--start-x:12vw;--drift-x:6vw;--duration:27s;--delay:-22s;--rotate-start:15deg;--rotate-end:455deg;--scale:.9}
 .petal-20{--start-x:29vw;--drift-x:-5vw;--duration:20s;--delay:-8s;--rotate-start:-30deg;--rotate-end:350deg;--scale:1.1}
 .petal-21{--start-x:47vw;--drift-x:7vw;--duration:24s;--delay:-17s;--rotate-start:50deg;--rotate-end:430deg;--scale:.78}
-.petal-22{--start-x:64vw;--drift-x:-6vw;--duration:18s;--delay:-5s;--rotate-start:-5deg;--rotate-end:340deg;--scale:1.02}
+.petal-22{--start-x:64vw;--drift-x:-6vw;--duration:28s;--delay:-5s;--rotate-start:-5deg;--rotate-end:340deg;--scale:1.02}
 .petal-23{--start-x:81vw;--drift-x:8vw;--duration:25s;--delay:-15s;--rotate-start:35deg;--rotate-end:420deg;--scale:.86}
 .petal-24{--start-x:91vw;--drift-x:-7vw;--duration:22s;--delay:-9s;--rotate-start:-45deg;--rotate-end:325deg;--scale:1.12}
 .petal-25{--start-x:17vw;--drift-x:-8vw;--duration:19s;--delay:-3s;--rotate-start:75deg;--rotate-end:465deg;--scale:.7}
@@ -312,8 +305,6 @@ button{font:inherit}
 
 /* Petal visibility fix */
 .petal{
-  opacity: 0.95 !important;
-  filter: drop-shadow(0 0 10px rgba(220,170,255,.9))
-          drop-shadow(0 0 18px rgba(180,120,255,.7));
-  z-index: 5 !important;
+  opacity:.85 !important;
+  z-index:5 !important;
 }
