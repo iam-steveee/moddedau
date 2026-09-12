@@ -244,6 +244,7 @@ button{font:inherit}
 .category-card:hover,.category-card.active{border-color:rgba(196,172,255,.28);transform:translateY(-2px)}
 .category-card:hover:before,.category-card.active:before{opacity:1}
 .category-icon{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.04);font-size:22px;color:#c8b4ff;position:relative;z-index:1}
+.category-icon img{width:100%;height:100%;object-fit:contain;border-radius:inherit;display:block}
 .category-card>span:nth-child(2){display:flex;flex-direction:column;gap:7px;position:relative;z-index:1}
 .category-card strong{font-size:18px}.category-card small{font:11px "DM Mono",monospace;color:#7f7c85;line-height:1.5}.category-arrow{color:#77747c;font-size:18px;position:relative;z-index:1}
 
