@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08090d">
+  <meta name="description" content="Modded AU — technical information, resources and exploration of modded Among Us.">
+  <title>Modded AU — Modded Among Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Exo+2:wght@300;400;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <div class="petal-layer" aria-hidden="true">
+    <span class="petal petal-01"></span><span class="petal petal-02"></span>
+    <span class="petal petal-03"></span><span class="petal petal-04"></span>
+    <span class="petal petal-05"></span><span class="petal petal-06"></span>
+    <span class="petal petal-07"></span><span class="petal petal-08"></span>
+    <span class="petal petal-09"></span><span class="petal petal-10"></span>
+    <span class="petal petal-11"></span><span class="petal petal-12"></span>
+    <span class="petal petal-13"></span><span class="petal petal-14"></span>
+    <span class="petal petal-15"></span><span class="petal petal-16"></span>
+    <span class="petal petal-17"></span><span class="petal petal-18"></span>
+    <span class="petal petal-19"></span><span class="petal petal-20"></span>
+    <span class="petal petal-21"></span><span class="petal petal-22"></span>
+    <span class="petal petal-23"></span><span class="petal petal-24"></span>
+  </div>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Modded AU home">
+      <span class="brand-mark">
+        <img src="assets/steve-logo.png"
+             alt="Steve logo"
+             onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/iam-steveee/moddedau-regions/main/assets/steve-logo.png';">
+      </span>
+      <span class="brand-title">MODDED AU</span>
+    </a>
+
+    <div class="header-menu">
+      <button class="menu-button" id="menuButton" type="button"
+              aria-label="Open Modded AU menu" aria-expanded="false" aria-controls="menuPanel">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="menu-panel" id="menuPanel" aria-hidden="true">
+        <a href="https://iam-steveee.github.io/moddedau-regions">Regions <span>↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> MODDED AMONG US · 2026</p>
+        <h1>MODDED AMONG US<br><span>Modded AU.</span></h1>
+        <p class="hero-text">
+          Technical information, resources and a place for exploring the world of modded Among Us.
+        </p>
+
+        <div class="reminder-card" aria-label="Navigation reminder">
+          <span class="reminder-mark">03</span>
+          <div>
+            <strong>Reminder</strong>
+            <p>Click the three dots above to explore things related to Modded AU. They are tucked away in the top-right corner, because apparently navigation now enjoys playing hide-and-seek.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-is section-shell">
+      <div class="section-kicker reveal">00 / WHAT IS MODDED AU?</div>
+
+      <details class="info-box reveal">
+        <summary>
+          <span class="summary-left">
+            <span class="summary-number">00</span>
+            <span>
+              <strong>What Is Modded AU?</strong>
+              <small>A detailed explanation based on Innersloth's official modding information.</small>
+            </span>
+          </span>
+          <span class="summary-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <div class="info-content">
+          <div class="source-banner">
+            <div>
+              <p class="eyebrow">PRIMARY SOURCE</p>
+              <h2>Among Us Modding Information</h2>
+              <p>
+                This section summarizes the technical information published by Innersloth for people
+                working with Among Us mods and modded multiplayer. It is a detailed summary, not a
+                replacement for the original documentation.
+              </p>
+            </div>
+            <a class="source-button" href="https://github.com/Innersloth-LLC/AmongUsModdingInformation"
+               target="_blank" rel="noopener noreferrer">Open Innersloth's repository ↗</a>
+          </div>
+
+          <article class="info-section">
+            <p class="info-label">01 · PURPOSE</p>
+            <h3>What Innersloth's documentation is for</h3>
+            <p>
+              Innersloth's repository is intended to share technical information that can help the
+              modding community understand parts of Among Us multiplayer, including information useful
+              when building mods and when playing modded games through Innersloth's backend.
+              The documentation is deliberately focused on the technical interface between a mod and
+              the game's online systems rather than being a general guide to creating a mod from scratch.
+            </p>
+            <p>
+              Innersloth also links to its modding policy and provides <code>modding@innersloth.com</code>
+              as a contact for modding-related matters. The documentation makes an important distinction:
+              Innersloth does not officially support mods, and requirements, restrictions, or technical
+              behavior can change, particularly when changes are needed for security and player protection.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">02 · TWO MOD CATEGORIES</p>
+            <h3>Host-only mods and all-client mods</h3>
+            <p>
+              From the server's perspective, Innersloth describes two broad categories of modded
+              multiplayer.
+            </p>
+
+            <div class="detail-grid">
+              <div class="detail-card">
+                <span class="card-index">A</span>
+                <h4>Host-only Mods</h4>
+                <p>
+                  Only the host's client is modded. These mods make use of authority held by the host,
+                  which can allow modified gameplay while leaving other players on an unmodded client.
+                  This makes host-only approaches more accessible because an entire lobby does not
+                  necessarily need to install the same mod.
+                </p>
+                <p>
+                  The trade-off is functionality. Because the architecture still gives clients and
+                  servers control over particular parts of state, a host-only mod cannot freely change
+                  everything about the game.
+                </p>
+              </div>
+
+              <div class="detail-card">
+                <span class="card-index">B</span>
+                <h4>All-client Mods</h4>
+                <p>
+                  Every client in the lobby uses the same mod. This gives the mod substantially more
+                  freedom to change gameplay because the participating clients can share an agreed
+                  understanding of the modified game.
+                </p>
+                <p>
+                  The trade-off is accessibility: players generally need the same mod installed before
+                  they can participate in that modded lobby.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">03 · MOD REGISTRATION</p>
+            <h3>How Innersloth identifies modded games</h3>
+            <p>
+              Innersloth describes registration as a way to tell the game server that a lobby is
+              modded. Registration can provide special treatment for the modded lobby, particularly
+              around state authority and matchmaking. The documentation separates registration into
+              two mechanisms: a <strong>+25 modded flag</strong> for host-authority behavior and a
+              <strong>Mod GUID</strong> for identifying an all-client mod.
+            </p>
+            <p>
+              Registration is not the same thing as learning how to modify the game itself. Innersloth
+              explicitly says that modders are expected to understand how to change or inject behavior
+              into the Among Us client. The documentation supplies the registration side of that
+              process, but does not teach application modification.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">04 · THE +25 HOST FLAG</p>
+            <h3>Host authority mode</h3>
+            <p>
+              Among Us clients contain an integer networking protocol version. Innersloth documents
+              adding <code>25</code> to that version as the mechanism that enables a host-authority
+              mode for a lobby.
+            </p>
+            <p>
+              In that mode, much of the gameplay state that would ordinarily have server authority can
+              instead be handled with host authority. This gives the host's mod more control over the
+              outcome of gameplay features and therefore makes certain gameplay modifications possible.
+            </p>
+
+            <div class="note-card">
+              <strong>Important limitations</strong>
+              <ul>
+                <li>Host authority does not automatically cover every kind of state. Information such as user data and player-protection-related state remains subject to other authority rules.</li>
+                <li>Anti-cheat is relaxed for this mode, but the documentation does not promise that anti-cheat is disabled in every circumstance.</li>
+                <li>Rate limits and other security protections can still apply.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">05 · AU MCI</p>
+            <h3>Among Us Modded Client Identification</h3>
+            <p>
+              For all-client mods, Innersloth documents an opt-in system called Among Us Modded Client
+              Identification, or AU MCI. The system lets a mod declare itself as a particular mod during
+              the hosting and matchmaking process.
+            </p>
+            <p>
+              The documented benefits include searches that look specifically for lobbies running the
+              same mod, lobbies that ordinary unmodded clients cannot join, and special anti-cheat
+              exemptions associated with identified modded games.
+            </p>
+            <p>
+              Innersloth describes this as a transparency and infrastructure measure rather than
+              official technical support for mods. The stated goal includes helping the modding
+              community while making it easier to maintain stronger anti-cheat behavior for ordinary,
+              non-modded games.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">06 · THE THREE AU MCI COMPONENTS</p>
+            <h3>Mod GUID, hosting identification, and matchmaking filters</h3>
+
+            <div class="detail-grid three">
+              <div class="detail-card">
+                <span class="card-index">01</span>
+                <h4>Self-assigned Mod GUID</h4>
+                <p>
+                  A mod chooses a unique identifier so the system can distinguish that mod from other
+                  modded clients. Innersloth describes these identifiers as version-4 UUID/GUID values.
+                </p>
+              </div>
+
+              <div class="detail-card">
+                <span class="card-index">02</span>
+                <h4>Modded hosting path</h4>
+                <p>
+                  A modded host can use the dedicated hosting path associated with its chosen identifier,
+                  allowing the game server and matchmaking infrastructure to recognize the lobby as
+                  belonging to that mod.
+                </p>
+              </div>
+
+              <div class="detail-card">
+                <span class="card-index">03</span>
+                <h4>Matchmaking filters</h4>
+                <p>
+                  Searches can include the mod identifier as a filter so a player can look for lobbies
+                  running the same mod instead of receiving unrelated ordinary or differently modded
+                  games.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">07 · MOD GUID / UUID</p>
+            <h3>Why the identifier matters</h3>
+            <p>
+              The Mod GUID is effectively the identity of an all-client mod within the registration
+              system. A modder assigns one identifier to the mod and should keep using that same
+              identifier throughout the related registration and matchmaking process.
+            </p>
+            <p>
+              Innersloth points out that these are ordinary version-4 UUID-style identifiers and can be
+              generated using a UUID generator. The important part is uniqueness and consistency, not a
+              special name chosen by Innersloth.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">08 · BUILT-IN REGISTRATION HELPERS</p>
+            <h3>Registration support in Among Us 18.0+</h3>
+            <p>
+              Innersloth added built-in client-side registration helpers in Among Us 18.0 and later.
+              The purpose is to make it easier for mod authors to add mod registration without having
+              to recreate the registration mechanism themselves.
+            </p>
+            <p>
+              The client exposes a registration string and a validation helper. When the registration
+              value is empty or missing, the client behaves as an unregistered game, using ordinary
+              hosting behavior and no mod-specific matchmaking filter. When a valid Mod GUID is set,
+              the client can automatically apply the modded host identification and the corresponding
+              matchmaking behavior.
+            </p>
+            <p>
+              Innersloth also documents validation behavior for the GUID, including handling empty
+              values and parsing the value into a GUID. Mods that support multiple modes can change
+              their registration value before hosting or searching, using either the registration string
+              or the validation helper described by the repository.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">09 · WHAT HAPPENS ON THE NETWORK</p>
+            <h3>Modded host tags and Mod GUID data</h3>
+            <p>
+              At a lower technical level, Innersloth documents a distinct host tag used to mark a
+              modded host. The documented modded host path uses the value associated with the +25
+              mechanism rather than the ordinary host tag.
+            </p>
+            <p>
+              For all-client identification, the Mod GUID is included with the host's modded-game
+              information. The server and matchmaking systems can then recognize that the lobby is a
+              modded game and keep it out of normal matchmaking while applying the documented
+              anti-cheat treatment for identified modded games.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">10 · MATCHMAKING</p>
+            <h3>Searching specifically for a mod</h3>
+            <p>
+              Innersloth documents a matchmaking filter whose purpose is to match a search against a
+              specific mod identifier. A client can provide the relevant filter and the accepted Mod
+              GUID so the search is restricted to compatible modded lobbies.
+            </p>
+            <p>
+              This is especially important for all-client mods. If a mod changes the game's rules,
+              network messages, roles, or other shared behavior, allowing an unrelated client into the
+              lobby could produce an incompatible game. Mod-specific matchmaking prevents that
+              situation by separating the modded lobby from ordinary and differently identified games.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">11 · +25 AND MOD GUID ARE DIFFERENT</p>
+            <h3>They solve different problems</h3>
+            <p>
+              Innersloth explicitly distinguishes the +25 host-authority mechanism from the Mod GUID
+              identification system. They are not interchangeable names for the same feature.
+            </p>
+            <p>
+              A mod can use one mechanism or, depending on its architecture and needs, use both. The
+              +25 mechanism concerns host authority, while the Mod GUID identifies an all-client mod
+              for hosting and matchmaking.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">12 · HOST-ONLY CHAT COMMANDS</p>
+            <h3>Sending command-like messages to the host</h3>
+            <p>
+              Innersloth documents a host-only communication path for +25 mods. Non-host players can
+              send messages beginning with the mod's command prefix to the host, where the host-side
+              mod can interpret them.
+            </p>
+            <p>
+              This is useful when a host-only mod needs an interaction from an unmodded player without
+              requiring that player's client to contain the mod. The documentation provides a technical
+              example, but this page intentionally explains the mechanism rather than reproducing the
+              repository's source code.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">13 · PACKED GAMEDATATO</p>
+            <h3>Combining several host-to-player messages</h3>
+            <p>
+              Host-only mods can also reduce network overhead by packing multiple GameDataTo messages
+              into one packet. The documented packed-message tag is <code>PackedGameDataTo</code>.
+            </p>
+            <p>
+              The packing rules are strict: the messages being packed need to be GameDataTo messages,
+              each needs the correct game identifier, and the complete packet including its header must
+              stay within the documented maximum packet size.
+            </p>
+            <p>
+              Innersloth's documented maximum MessageReader message size, including the header, is
+              <strong>1200 bytes</strong>. The same size limit matters when planning packed network
+              messages.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">14 · PACKET SEND RATES</p>
+            <h3>Mods still have to respect server-side networking constraints</h3>
+            <p>
+              Connecting to Innersloth's game servers does not mean that a mod gets unlimited network
+              bandwidth. Innersloth states that clients must follow required packet send-rate and packet
+              size constraints.
+            </p>
+            <p>
+              The documentation notes that the exact requirements for mods were still being determined
+              at the time of publication. Extra room may be possible in some circumstances, but security
+              takes priority and stricter limits can be applied.
+            </p>
+            <p>
+              Mod developers are therefore encouraged to keep their send rate as low as practical. If a
+              mod genuinely needs a burst of traffic, Innersloth recommends contacting the modding
+              address rather than simply assuming that a higher rate is acceptable.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">15 · NETWORKING STRATEGIES</p>
+            <h3>Ways the documentation suggests reducing network pressure</h3>
+
+            <div class="strategy-list">
+              <div class="strategy-row">
+                <span>01</span>
+                <div><strong>Pack GameDataTo messages</strong><p>Combine compatible host-to-player messages when possible instead of sending many separate packets.</p></div>
+              </div>
+              <div class="strategy-row">
+                <span>02</span>
+                <div><strong>Separate reliable and unreliable traffic</strong><p>Use the appropriate channel for the type of information instead of treating every message as equally important.</p></div>
+              </div>
+              <div class="strategy-row">
+                <span>03</span>
+                <div><strong>Spread traffic out</strong><p>If a burst is unavoidable, distributing packets across frames or time can reduce sudden pressure on the server connection.</p></div>
+              </div>
+              <div class="strategy-row">
+                <span>04</span>
+                <div><strong>Use built-in queues and streams</strong><p>Among Us provides rate-limiting queues and message streams that can help a mod schedule traffic more safely.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">16 · RPC QUEUES</p>
+            <h3>Reliable and unreliable RPC delivery</h3>
+            <p>
+              Innersloth documents optimized queues for RPC traffic that is not considered competitive
+              or otherwise latency-critical. The available broadcast mechanisms can use reliable or
+              unreliable delivery depending on what the mod needs.
+            </p>
+            <p>
+              The practical idea is to avoid forcing every message through the most expensive delivery
+              path. A mod should choose the networking behavior appropriate to the importance and
+              lifetime of the information it is sending.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">17 · DATA FLAGS AND MESSAGE STREAMS</p>
+            <h3>Updating only what changed</h3>
+            <p>
+              The documentation also describes DataFlags and message streams as tools for keeping
+              updates efficient. A streamed object can use a dirty flag so that the system knows an
+              update needs to be sent.
+            </p>
+            <p>
+              This follows the broader networking principle used throughout the documentation:
+              avoid repeatedly sending information that has not changed, and use the game's built-in
+              mechanisms where possible.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">18 · PACKET SIZE PLANNING</p>
+            <h3>Keep packets under the documented limit</h3>
+            <p>
+              A practical strategy described by Innersloth is to queue or pack messages until adding
+              another message would exceed the packet capacity. The implementation should combine this
+              with rate limiting so that a mod is controlling both the size and frequency of outgoing
+              traffic.
+            </p>
+            <p>
+              The documented MessageReader maximum is 1200 bytes including the packet header. This is
+              an important boundary when designing custom network messages and packed GameDataTo data.
+            </p>
+          </article>
+
+          <article class="info-section">
+            <p class="info-label">19 · THE DOCUMENTATION'S FAQ</p>
+            <h3>What the key points mean together</h3>
+            <div class="faq-stack">
+              <div class="faq-item">
+                <strong>Is +25 the same thing as a Mod GUID?</strong>
+                <p>No. They are separate systems. +25 is associated with host authority, while a Mod GUID identifies an all-client mod for registration and matchmaking.</p>
+              </div>
+              <div class="faq-item">
+                <strong>Can they be used together?</strong>
+                <p>Yes, depending on the mod's requirements and architecture. Innersloth treats them as separate mechanisms rather than mutually exclusive choices.</p>
+              </div>
+              <div class="faq-item">
+                <strong>Does Innersloth officially support mods?</strong>
+                <p>The repository says no. It provides technical information and registration infrastructure, but explicitly does not promise official technical support for mods.</p>
+              </div>
+              <div class="faq-item">
+                <strong>Does registering a mod teach you how to make the mod?</strong>
+                <p>No. Mod authors still need to understand how to modify the Among Us client. The repository focuses on the registration and networking side of the relationship with Innersloth's backend.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="info-section final-source">
+            <p class="info-label">20 · SOURCE &amp; SCOPE</p>
+            <h3>Read the original documentation</h3>
+            <p>
+              Everything in this expandable section is a structured summary of the technical topics
+              covered by Innersloth's public Among Us Modding Information repository. It intentionally
+              does not reproduce the repository's long code examples or sample identifiers verbatim.
+              For exact implementation details, current requirements, policy information, and changes,
+              use the original source.
+            </p>
+            <div class="source-links">
+              <a href="https://github.com/Innersloth-LLC/AmongUsModdingInformation" target="_blank" rel="noopener noreferrer">Innersloth · AmongUsModdingInformation ↗</a>
+              <a href="https://www.innersloth.com/among-us-mod-policy/" target="_blank" rel="noopener noreferrer">Innersloth · Among Us Mod Policy ↗</a>
+              <a href="mailto:modding@innersloth.com">modding@innersloth.com</a>
+            </div>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <section class="modding section-shell">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">01 · MODDING AMONG US</p>
+          <h2>The technical side<br><span>starts here.</span></h2>
+        </div>
+        <p class="section-note">A cleaner home for the technical resources, documentation and related pages that follow.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-number">01</div>
+        <div>
+          <p class="feature-label">MODDED AU</p>
+          <h3>Explore the ecosystem.</h3>
+          <p>
+            Modded AU is the homepage layer for information and resources around modded Among Us.
+            The three-dot menu keeps the page clean while still giving the site a place to grow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Find me outside<br><span>this page.</span></h2>
+        </div>
+        <p class="section-note">The same contact section used across the Modded AU site family.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <span class="contact-index">01</span>
+          <div><small>DISCORD</small><strong>@iam._.steve</strong></div>
+        </div>
+        <div class="contact-card reveal delay-1">
+          <span class="contact-index">02</span>
+          <div><small>DISCORD SERVER</small><strong>Among Us Indians</strong></div>
+        </div>
+        <a class="contact-card reveal delay-1" href="https://github.com/iam-steveee" target="_blank" rel="noopener noreferrer">
+          <span class="contact-index">03</span>
+          <div><small>GITHUB</small><strong>iam-steveee</strong></div>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <div class="contact-card reveal">
+          <span class="contact-index">04</span>
+          <div><small>FAVORITE AMONG US MOD DISCORD</small><strong>EHR · Endless Host Roles</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div><strong>MODDED AU</strong><span>Technical information &amp; resources for modded Among Us.</span></div>
+    <span>Built for exploration.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
