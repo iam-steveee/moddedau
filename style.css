@@ -226,6 +226,10 @@ code{font:500 .92em var(--mono);color:#d2c0ff;background:rgba(180,151,255,.08);p
 }
 .contact-card:hover{transform:translateX(4px);border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.045)}
 .contact-index{font:10px var(--mono);color:#76737c}
+.contact-icon{width:45px;height:45px;border-radius:15px;display:grid;place-items:center}
+.contact-icon svg{width:21px;height:21px}
+.discord-bg{background:rgba(88,101,242,.14);color:#98a4ff}
+.github-bg{background:rgba(255,255,255,.08);color:#fff}
 .contact-card div{display:flex;flex-direction:column;gap:5px}
 .contact-card small{font:9px var(--mono);color:#66636c;letter-spacing:.12em}
 .contact-card strong{font-size:14px;color:#e2dfe4}
