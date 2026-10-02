@@ -22,7 +22,7 @@ echo.
 where curl >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
     echo "Warning, you do not have CURL installed."
-    echo "Please manually download regionInfo from https://iam-steveee.github.io/moddedau/regions/regioninfo.json"
+    echo "Please manually download regioninfo from https://iam-steveee.github.io/moddedau/regions/regioninfo.json"
     echo "And replace it with your new regioninfo.json (path depends on your platform)."
     pause
     exit /b
@@ -59,7 +59,7 @@ echo Scanning WGS save containers for regioninfo data, this may take a moment...
 for /f "delims=" %%F in ('powershell -NoProfile -Command "Get-ChildItem -Path '!PKG_ROOT!\SystemAppData\wgs' -Recurse -File -ErrorAction SilentlyContinue | Select-String -Pattern 'StaticHttpRegionInfo, Assembly-CSharp' -SimpleMatch -List | Select-Object -ExpandProperty Path | Get-Item | Sort-Object LastWriteTime -Descending | Select-Object -First 1 -ExpandProperty FullName"') do set "TARGET_PATH=%%F"
 
 if not defined TARGET_PATH (
-    echo Could not automatically locate the regionInfo container.
+    echo Could not automatically locate the regioninfo container.
     echo Please follow the manual installation steps on the page where you originally downloaded this script.
     pause
     exit /b
