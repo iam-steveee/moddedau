@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo "Downloading Modded Regions from https://iam-steveee.github.io/moddedau/regions/regioninfo.json"
+echo "Downloading Modded Regions from https://iam-steveee.github.io/moddedau/regions/"
 echo "This script downloads the following regions:"
 echo " -------- "
 echo "  - GG(US)"
@@ -16,14 +16,14 @@ echo "  - Niko233(NA)"
 echo "  - AOU(EU)"
 echo "  - Jarne's MEU"
 echo " -------- "
-echo "If you'd like to remove any of these regions at any time, you can go to the regionInfo.json file and remove the corresponding region object."
+echo "If you'd like to remove any of these regions at any time, you can go to the regioninfo.json file and remove the corresponding region object."
 echo.
 
 where curl >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
     echo "Warning, you do not have CURL installed."
     echo "Please manually download regionInfo from https://iam-steveee.github.io/moddedau/regions/regioninfo.json"
-    echo "And replace it with your new regionInfo.json (path depends on your platform)."
+    echo "And replace it with your new regioninfo.json (path depends on your platform)."
     pause
     exit /b
 )
@@ -54,7 +54,7 @@ if not defined PKG_ROOT (
     exit /b
 )
 
-echo Scanning WGS save containers for regionInfo data, this may take a moment...
+echo Scanning WGS save containers for regioninfo data, this may take a moment...
 
 for /f "delims=" %%F in ('powershell -NoProfile -Command "Get-ChildItem -Path '!PKG_ROOT!\SystemAppData\wgs' -Recurse -File -ErrorAction SilentlyContinue | Select-String -Pattern 'StaticHttpRegionInfo, Assembly-CSharp' -SimpleMatch -List | Select-Object -ExpandProperty Path | Get-Item | Sort-Object LastWriteTime -Descending | Select-Object -First 1 -ExpandProperty FullName"') do set "TARGET_PATH=%%F"
 
@@ -68,7 +68,7 @@ if not defined TARGET_PATH (
 goto download
 
 :steam
-set "TARGET_PATH=%APPDATA%\..\LocalLow\Innersloth\Among Us\regionInfo.json"
+set "TARGET_PATH=%APPDATA%\..\LocalLow\Innersloth\Among Us\regioninfo.json"
 
 :download
 echo.
