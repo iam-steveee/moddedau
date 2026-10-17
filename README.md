@@ -118,8 +118,6 @@ The regions below are operated or supported by independent community members. Mo
 - **GitHub:** [EndlessHostRoles](https://github.com/Gurge44/EndlessHostRoles)
 - **Support:** [Patreon](https://patreon.com/EndlessHostRoles)
 
-Discord invite links for the region operators are omitted because the canonical Regions page and its source could not be accessed for verification. Check the live [Regions directory](https://iam-steveee.github.io/moddedau/regions/) for current invites.
-
 ---
 
 ## Mobile Installation
