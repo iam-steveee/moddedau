@@ -11,14 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://iam-steveee.github.io/moddedau/"><strong>Website</strong></a> ·
-  <a href="https://iam-steveee.github.io/moddedau/regions/"><strong>Browse Regions</strong></a> ·
-  <a href="https://github.com/iam-steveee/moddedau"><strong>Source Code</strong></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/iam-steveee/moddedau"><img src="https://img.shields.io/badge/GitHub-Repository-24292e?style=flat-square&logo=github&logoColor=white" alt="GitHub Repository"></a>
-  <a href="https://iam-steveee.github.io/moddedau/"><img src="https://img.shields.io/badge/Website-Live-2f855a?style=flat-square&logo=googlechrome&logoColor=white" alt="Website"></a>
+  <a href="https://iam-steveee.github.io/moddedau/"><img src="https://img.shields.io/badge/Home%20Page-Live-2f855a?style=flat-square&logo=googlechrome&logoColor=white" alt="Home Page"></a>
+  <a href="https://iam-steveee.github.io/moddedau/regions/"><img src="https://img.shields.io/badge/Regions-Page-5865F2?style=flat-square&logo=googlechrome&logoColor=white" alt="Regions Page"></a>
   <a href="https://github.com/Innersloth-LLC/AmongUsModdingInformation"><img src="https://img.shields.io/badge/Among%20Us-Modding%20Resources-5865F2?style=flat-square" alt="Among Us Modding Resources"></a>
 </p>
 
@@ -27,9 +22,9 @@
 ## Contents
 
 - [About](#about)
-- [Website Preview](#website-preview)
 - [Features](#features)
 - [Custom Regions](#custom-regions)
+- [Region Ownership](#region-ownership)
 - [Mobile Installation](#mobile-installation)
 - [Windows Installation](#windows-installation)
 - [How the Installer Works](#how-the-installer-works)
@@ -51,34 +46,14 @@ The project has two main sections:
 
 The goal is to make discovering and configuring custom regions easier through a simple, accessible website.
 
-## Website Preview
-
-<p align="center">
-  <a href="https://iam-steveee.github.io/moddedau/">
-    <img src="assets/screenshots/homepage.png" alt="Modded AU homepage" width="85%">
-  </a>
-</p>
-
-<p align="center"><sub>Modded AU homepage</sub></p>
-
-<p align="center">
-  <a href="https://iam-steveee.github.io/moddedau/regions/">
-    <img src="assets/screenshots/regions.png" alt="Modded AU Regions directory" width="85%">
-  </a>
-</p>
-
-<p align="center"><sub>Modded AU Regions directory</sub></p>
-
-> **Note:** Add real screenshots at `assets/screenshots/homepage.png` and `assets/screenshots/regions.png`, or change the paths to match your actual screenshot files.
-
 ## Features
 
 | Feature | Description |
 |---|---|
 | Custom Regions | Browse the listed custom Among Us regions. |
 | Mobile Guide | Follow the mobile region-selection instructions. |
-| Windows Installer | Use the provided batch script for automated setup. |
-| Manual Installation | Install the region configuration manually. |
+| Steve'sCustomServersForAU.bat Installer | Use the provided batch script for automated setup. |
+| Manual Installation (Windows) | Install the region configuration manually. |
 | Modding Resources | Access official documentation and policy information. |
 | Responsive Website | Access the website from desktop and mobile browsers. |
 
@@ -88,19 +63,62 @@ Visit the [Modded AU Regions website](https://iam-steveee.github.io/moddedau/reg
 
 | Region | Group |
 |---|---|
-| GG US | GG |
-| GG HU | GG |
-| Modded AS | Modded |
-| Modded EU | Modded |
-| Modded NA | Modded |
+| GG US | Gurge (EHR) |
+| GG HU | Gurge (EHR) |
+| Modded AS | Miniduikboot and GD |
+| Modded EU | Miniduikboot and GD |
+| Modded NA | Miniduikboot and GD |
 | MAUL EU | MAUL |
 | MAUL NA | MAUL |
-| Niko AS | Niko |
-| Niko NA | Niko |
-| AOU EU | AOU |
-| Jarne's MEU | Jarne's |
+| Niko AS | Niko233 |
+| Niko NA | Niko233 |
+| AOU EU | AOU (All of Us) |
+| Jarne's MEU | Jarne (Mod Manager) |
 
 **Availability:** The website marks MAUL AS as coming soon and Niko EU as shut down. Check the live directory for current status.
+
+
+## Region Ownership
+
+The regions below are operated or supported by independent community members. Modded AU lists these regions but does not claim ownership of their servers.
+
+### NikoCat233
+
+- **Regions:** Niko NA, Niko Asia
+- **GitHub:** [NikoCat233](https://github.com/NikoCat233)
+
+### MAUL Regions
+
+- **Regions:** MAUL - NA, MAUL - EU
+- **Support:** [Ko-fi](https://ko-fi.com/moddeau)
+
+### All Of Us: Among Us Mods
+
+- **Region:** AOU Europe
+- **GitHub:** [All-Of-Us-Mods](https://github.com/All-Of-Us-Mods)
+- **Support:** [Ko-fi](https://ko-fi.com/allofusmods)
+
+### Modded Regions
+
+- **Regions:** Modded NA, Modded EU, Modded Asia
+- **Operators:** miniduikboot and GD
+- **GitHub:** [Mini.RegionInstall](https://github.com/miniduikboot/Mini.RegionInstall)
+- **Sponsor:** [GitHub Sponsors](https://github.com/sponsors/miniduikboot)
+- **Website:** [duikbo.at](https://duikbo.at/)
+
+### Jarne's Custom Regions
+
+- **Region:** Jarne's MEU
+- **GitHub:** [JarneDEVsys](https://github.com/JarneDEVsys)
+- **Support:** [Ko-fi](https://ko-fi.com/jarnemm)
+
+### Gurge (EHR)
+
+- **Regions:** GG US, GG HU
+- **GitHub:** [EndlessHostRoles](https://github.com/Gurge44/EndlessHostRoles)
+- **Support:** [Patreon](https://patreon.com/EndlessHostRoles)
+
+Discord invite links for the region operators are omitted because the canonical Regions page and its source could not be accessed for verification. Check the live [Regions directory](https://iam-steveee.github.io/moddedau/regions/) for current invites.
 
 ---
 
@@ -122,7 +140,7 @@ Visit the [Modded AU Regions website](https://iam-steveee.github.io/moddedau/reg
 
 Windows users can install the region configuration using either the automatic installer or the manual method.
 
-### Method 1: Automatic Installer
+### Method 1: Steve'sCustomServersForAU.bat Installer
 
 **Installer:** [`Steve'sCustomServersForAU.bat`](https://github.com/iam-steveee/moddedau/blob/main/regions/Steve%27sCustomServersForAU.bat)
 
@@ -140,7 +158,7 @@ The installer uses `curl` to download the region configuration and attempts to l
 
 If the script cannot locate the game or the download fails, try the manual method below.
 
-### Method 2: Manual Installation
+### Method 2: Manual Installation (Windows)
 
 **Configuration file:** [`regioninfo.json`](https://iam-steveee.github.io/moddedau/regions/regioninfo.json)
 
@@ -246,7 +264,7 @@ The hosted JSON file supplies the region configuration used by the installation 
 <details>
   <summary><strong>Is Modded AU officially affiliated with Innersloth?</strong></summary>
 
-  No. Modded AU is an independent community project and is not officially affiliated with Innersloth.
+  No. Modded AU is an independent community project and is not affiliated with, endorsed by, or sponsored by Innersloth LLC or Among Us.
 </details>
 
 ## Official Resources
@@ -256,12 +274,14 @@ The hosted JSON file supplies the region configuration used by the installation 
 
 Consult these resources for official modding documentation and policy information.
 
+> This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.
+
 ## Others
 
-- **Discord:** [@iam._.steve](https://discord.com/users/949872550274547734)
-- **GitHub:** [iam-steveee](https://github.com/iam-steveee)
-- **Among Us Indians:** [Discord Community](https://discord.gg/amongusindians)
-- **EHR · Endless Host Roles:** [Discord](https://discord.gg/ehr)
+- **Discord profile:** [@iam._.steve](https://discord.com/users/949872550274547734)
+- **GitHub profile:** [iam-steveee](https://github.com/iam-steveee)
+- **Among Us Indians Discord:** [Discord Community](https://discord.gg/amongusindians)
+- **EHR Discord:** [Endless Host Roles](https://discord.gg/ehr)
 
 ---
 
@@ -271,5 +291,5 @@ Consult these resources for official modding documentation and policy informatio
 
 <p align="center">
   <strong>Made by Steve</strong><br>
-  <sub>Modded AU is an independent community project and is not officially affiliated with Innersloth.</sub>
+  <sub>Modded AU is an independent community project and is not affiliated with, endorsed by, or sponsored by Innersloth LLC or Among Us.</sub>
 </p>
