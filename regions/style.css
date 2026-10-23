@@ -1,7 +1,7 @@
-@font-face{font-family:"Profa";src:url("../assets/fonts/Profa-BlackExpanded.woff") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Thecoa";src:url("../assets/fonts/Thecoa-Medium.woff") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Kinoble";src:url("../assets/fonts/Kinoble-Medium.woff") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Ovelion";src:url("../assets/fonts/Ovelion-Regular.woff") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Profa";src:url("../assets/fonts/Profa-BlackExpanded.woff?v=2") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Thecoa";src:url("../assets/fonts/Thecoa-Medium.woff?v=2") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Kinoble";src:url("../assets/fonts/Kinoble-Medium.woff?v=2") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Ovelion";src:url("../assets/fonts/Ovelion-Regular.woff?v=2") format("woff");font-weight:100 900;font-style:normal;font-display:swap}
 :root{
   --bg:#08090d;
   --surface:rgba(17,19,27,.72);
@@ -177,7 +177,7 @@ button{font:inherit}
 .menu-panel a:hover{background:rgba(255,255,255,.06);color:#fff}
 .icon{display:inline-grid;place-items:center;width:18px;height:18px}.icon svg{width:18px}
 .section-shell{width:min(1180px,calc(100% - 40px));margin-inline:auto}
-.hero{min-height:auto;padding-top:150px;padding-bottom:48px;display:flex;align-items:center}
+.hero{min-height:auto;padding-top:150px;padding-bottom:40px;display:flex;align-items:center}
 .eyebrow{margin:0 0 18px;color:#a6a2ab;font:500 11px var(--mono);letter-spacing:.18em}
 .eyebrow-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#bca1ff;box-shadow:0 0 12px #bca1ff;margin-right:8px}
 .hero h1{font:900 clamp(34px,5.4vw,74px)/1.04 var(--heading);letter-spacing:-.01em;margin:0;max-width:1000px}
@@ -188,13 +188,13 @@ button{font:inherit}
 .primary-btn .arrow{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#171820;color:#fff}
 .primary-btn:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(0,0,0,.38)}
 .text-btn{font-family:var(--ui);font-size:13px;color:#aaa8af}.text-btn span{margin-left:8px}
-.intro{padding:40px 0 56px;border-top:1px solid var(--line)}
+.intro{padding:36px 0;border-top:1px solid var(--line)}
 .section-kicker{font:11px var(--mono);color:#77757e;letter-spacing:.16em;margin-bottom:28px}
 .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .intro h2,.connect h2{font:900 clamp(26px,4vw,50px)/1.12 var(--heading);letter-spacing:-.01em;margin:0}
 .hero h1 .accent-text,.intro h2 span,.connect h2 .accent-text{font:inherit;background:linear-gradient(100deg,#f4f1eb 0%,#e7dfff 34%,#cbb7ff 68%,#a88cff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .intro-grid>p{align-self:end;max-width:520px;color:#99979f;line-height:1.85;font-size:15px}
-.projects{padding:40px 0 56px}
+.projects{padding:36px 0}
 .section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}
 .section-heading h2{font:900 clamp(28px,4vw,52px)/1.1 var(--heading);letter-spacing:-.01em;margin:0}
 .section-note{font:11px var(--mono);line-height:1.7;color:#77757e;text-align:right}
@@ -220,7 +220,7 @@ button{font:inherit}
 .copy-row{display:flex;min-width:0;border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;background:rgba(0,0,0,.17)}
 .copy-row code{flex:1;min-width:0;padding:10px 11px;color:#77757d;font:10px var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .copy-btn{border:0;border-left:1px solid rgba(255,255,255,.08);background:transparent;color:#a9a6af;font:10px var(--mono);padding:0 12px;cursor:pointer;transition:.2s}.copy-btn:hover{color:#fff;background:rgba(255,255,255,.05)}
-.connect{padding:40px 0 56px}.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.connect h2 em{color:#c4b0ff;font-weight:500}.social-stack{display:grid;gap:12px}
+.connect{padding:36px 0}.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.connect h2 em{color:#c4b0ff;font-weight:500}.social-stack{display:grid;gap:12px}
 .social-card{display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:16px;padding:17px 18px;border:1px solid var(--line);border-radius:19px;background:rgba(255,255,255,.025);transition:.25s}
 .social-card:hover{transform:translateX(5px);border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.045)}
 .social-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center}.social-icon svg{width:23px}.discord-bg{background:rgba(88,101,242,.14);color:#98a4ff}.github-bg{background:rgba(255,255,255,.08);color:#fff}
@@ -237,8 +237,8 @@ button{font:inherit}
   .intro-grid,.connect-grid{grid-template-columns:1fr;gap:35px}.project-card{grid-template-columns:42px 1fr;gap:14px}.project-actions{grid-column:2;max-width:none}
 }
 @media (max-width:620px){
-  .section-shell{width:min(100% - 28px,1180px)}.brand-copy small{display:none}.hero{padding-top:112px;padding-bottom:36px}.hero h1{font-size:30px}.hero-text{font-size:14px;line-height:1.7}.hero-actions{gap:16px}.primary-btn{padding:13px 14px 13px 17px}
-  .intro{padding:32px 0 40px}.intro h2,.connect h2{font-size:26px}.projects{padding:32px 0 44px}.section-heading{display:block}.section-note{text-align:left;margin-top:14px}.project-card{padding:22px 18px;grid-template-columns:32px 1fr;border-radius:22px}.project-number{font-size:10px}.project-main{gap:14px;align-items:flex-start}.project-icon{width:52px;height:52px;flex-basis:52px;border-radius:16px}.project-copy h3{font-size:20px}.project-copy p:last-child{font-size:12px}.project-actions{grid-column:2}.copy-row code{font-size:9px}.connect{padding:32px 0 44px}.site-footer{grid-template-columns:1fr;gap:12px;padding-bottom:25px}.site-footer>span{order:3}.back-top{right:14px;bottom:14px}
+  .section-shell{width:min(100% - 28px,1180px)}.brand-copy small{display:none}.hero{padding-top:112px;padding-bottom:28px}.hero h1{font-size:30px}.hero-text{font-size:14px;line-height:1.7}.hero-actions{gap:16px}.primary-btn{padding:13px 14px 13px 17px}
+  .intro{padding:28px 0}.intro h2,.connect h2{font-size:26px}.projects{padding:28px 0}.section-heading{display:block}.section-note{text-align:left;margin-top:14px}.project-card{padding:22px 18px;grid-template-columns:32px 1fr;border-radius:22px}.project-number{font-size:10px}.project-main{gap:14px;align-items:flex-start}.project-icon{width:52px;height:52px;flex-basis:52px;border-radius:16px}.project-copy h3{font-size:20px}.project-copy p:last-child{font-size:12px}.project-actions{grid-column:2}.copy-row code{font-size:9px}.connect{padding:28px 0}.site-footer{grid-template-columns:1fr;gap:12px;padding-bottom:25px}.site-footer>span{order:3}.back-top{right:14px;bottom:14px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
@@ -255,14 +255,14 @@ button{font:inherit}
 .region-arrow{font-size:20px;color:#77747d;position:relative;z-index:1;transition:.25s}
 .region-card:hover .region-arrow{color:#d7c7ff;transform:translate(2px,-2px)}
 
-.announcement{padding:15px 0 48px}
+.announcement{padding:15px 0 36px}
 .announcement-inner{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:start;padding:25px 28px;border:1px solid rgba(255,190,120,.16);border-radius:24px;background:linear-gradient(135deg,rgba(54,39,24,.28),rgba(20,18,22,.5));box-shadow:0 20px 60px rgba(0,0,0,.2)}
 .announcement-label{font:10px var(--mono);letter-spacing:.15em;color:#c7a67b;padding-top:5px}
 .announcement-inner h3{margin:0;font-size:20px;letter-spacing:-.02em}
 .announcement-inner p{margin:8px 0 0;color:#96929a;font-size:13px;line-height:1.7}
 
-.install{padding:24px 0 56px}
-.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.install{padding:24px 0 36px}
+.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:0}
 .category-card{position:relative;display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:17px;padding:25px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,rgba(19,21,29,.74),rgba(13,14,20,.58));color:var(--text);text-align:left;cursor:pointer;transition:.25s;overflow:hidden}
 .category-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(169,133,255,.12),transparent 40%);opacity:0;transition:.25s}
 .category-card:hover,.category-card.active{border-color:rgba(196,172,255,.28);transform:translateY(-2px)}
@@ -295,7 +295,7 @@ button{font:inherit}
 .favorite .social-icon{color:#d5bcff}.favorite-bg{background:rgba(176,132,255,.12)}
 @keyframes panelIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(max-width:900px){.category-grid{grid-template-columns:1fr}.announcement-inner{grid-template-columns:1fr;gap:12px}.guide-steps,.methods{grid-template-columns:1fr}.install-panel{padding:28px}}
-@media(max-width:620px){.region-card{grid-template-columns:30px 1fr auto;padding:20px 17px;border-radius:21px}.region-main strong{font-size:18px}.region-main small{font-size:8px}.announcement{padding-bottom:36px}.announcement-inner{padding:21px}.category-card{padding:20px 18px}.category-card strong{font-size:16px}.category-card small{font-size:9px}.install{padding-top:20px}.install-panel{padding:20px;border-radius:23px}.bat-guide,.region-info-block{padding:18px}.guide-head h4{font-size:17px}.guide-steps{gap:9px}.quick-process{padding:19px}.quick-process ol{font-size:12px}.methods{gap:10px}.method-card{padding:17px}.cmd code{font-size:8px}}
+@media(max-width:620px){.region-card{grid-template-columns:30px 1fr auto;padding:20px 17px;border-radius:21px}.region-main strong{font-size:18px}.region-main small{font-size:8px}.announcement{padding-bottom:28px}.announcement-inner{padding:21px}.category-card{padding:20px 18px}.category-card strong{font-size:16px}.category-card small{font-size:9px}.install{padding-top:20px}.install-panel{padding:20px;border-radius:23px}.bat-guide,.region-info-block{padding:18px}.guide-head h4{font-size:17px}.guide-steps{gap:9px}.quick-process{padding:19px}.quick-process ol{font-size:12px}.methods{gap:10px}.method-card{padding:17px}.cmd code{font-size:8px}}
 
 /* Mobile guide additions */
 .mobile-guide { margin-top: 28px; }
@@ -328,23 +328,25 @@ button{font:inherit}
 
 .region-card.shutdown .region-main small{line-height:1.6}.region-card.shutdown .region-main small br+*{color:#8c8992}
 
-/* ===== FONT SYSTEM: only 4 fonts =====
-   Big Header   -> Profa (Black Expanded)
-   Small Header -> Thecoa (Medium)
-   Medium Text  -> Kinoble (Medium)
-   Small Text   -> Ovelion (Regular)  */
-html{font-synthesis:none;-webkit-font-smoothing:antialiased}
+/* ===== FONT SYSTEM: only 4 fonts, chosen by size =====
+   Big Header   (28px and up)  -> Profa Black Expanded
+   Small Header (15-27px)      -> Thecoa Medium
+   Medium Text  (14-17px body) -> Kinoble Medium
+   Small Text   (13px & below) -> Ovelion Regular           */
+html{font-synthesis:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 body{font-family:var(--body)}
 h1,h2{font-family:var(--heading);font-weight:900;letter-spacing:-.01em}
 h3,h4{font-family:var(--sub);font-weight:500;letter-spacing:0}
-code,kbd,pre,samp,small,button,input,select,textarea,.eyebrow,.section-kicker,.section-note{font-family:var(--small)}
+code,kbd,pre,samp,small,button,input,select,textarea,label,.eyebrow,.section-kicker,.section-note{font-family:var(--small)}
 .brand-title,.brand-copy strong{font-family:var(--heading);font-weight:900}
-.hero-text,.intro-grid>p,.source-banner p:not(.eyebrow),.info-section p,.panel-heading p:last-child,.panel-heading>p{font-family:var(--body)}
+.hero-text,.intro-grid>p,.source-banner p:not(.eyebrow),.info-section p,.panel-heading>p{font-family:var(--body)}
 .menu-panel a,.top-nav a,.primary-btn,.text-btn,.visit-btn,.source-button,.download-button,.copy-btn,.key,.toast,.site-footer,.back-top,.summary-icon,.region-arrow,.category-arrow,.social-arrow,.contact-arrow{font-family:var(--small)}
 .summary-left strong,.region-main strong,.category-card strong,.social-card strong,.contact-card strong,.announcement-inner h3,.project-copy h3,.guide-head h4,.method-card h4,.feature-card h3,.info-section h4,.reminder-card strong,.note-card strong,.strategy-row strong,.faq-item strong,.download-button strong{font-family:var(--sub);font-weight:500}
 .feature-card p,.detail-card p,.strategy-row p,.faq-item p,.reminder-card p,.note-card ul,.guide-steps p,.steps li,.final-step,.manual-intro,.announcement-inner p,.quick-process ol,.mobile-warning,.project-copy p,.contact-card small,.social-card small,.region-main small,.category-card small,.summary-left small{font-family:var(--small)}
-/* Arrow glyphs come from Kinoble; bump size so they read as clearly as before */
+/* arrows come from Kinoble (Profa/Ovelion have none) - keep them readable */
 .region-arrow,.category-arrow,.social-arrow{font-size:24px;line-height:1}
 .primary-btn .arrow{font-size:18px;line-height:1}
 .back-top{font-size:20px;line-height:1}
 .menu-panel a span{font-size:16px}
+
+.install-panel{margin-top:18px}
